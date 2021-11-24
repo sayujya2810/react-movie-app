@@ -1,22 +1,21 @@
 body {
-  background-color: #141414;
-  color: white;
+  background: #141414;
+  color: #ffffff;
 }
 
 .movie-app > .row {
   overflow-x: auto;
   flex-wrap: nowrap;
-  max-height: 40vh;
 }
 
 .image-container {
   position: relative;
-  transition: tranform 0.2s;
+  transition: transform 0.2s;
 }
 
 .image-container:hover {
   cursor: pointer;
-  transform: scale((1.1));
+  transform: scale(1.1);
 }
 
 .image-container:hover .overlay {
@@ -24,13 +23,13 @@ body {
 }
 
 .overlay {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  transition: 0.5s;
+  transition: 0.5s ease;
   opacity: 0;
   bottom: 0;
-  font-size: 100px;
-  padding: 100px;
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
 }
